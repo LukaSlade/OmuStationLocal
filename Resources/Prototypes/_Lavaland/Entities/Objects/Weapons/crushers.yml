@@ -222,6 +222,8 @@
     angle: 0
     animation: WeaponArcThrust
     range: 1.6
+  - type: Reflect # Omu edit
+    reflectProb: .15
   - type: Item
     size: Ginormous
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_machete-inhands.rsi
