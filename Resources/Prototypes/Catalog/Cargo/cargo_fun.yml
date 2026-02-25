@@ -145,6 +145,16 @@
   category: cargoproduct-category-name-fun
   group: market
 
+- type: cargoProduct # Omu
+  id: CrateFunSyndicateToys
+  icon:
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    state: base
+  product: CrateCargoSyndicateToys
+  cost: 5000
+  category: cargoproduct-category-name-fun
+  group: market
+
 - type: cargoProduct
   id: FunPlushies
   icon:

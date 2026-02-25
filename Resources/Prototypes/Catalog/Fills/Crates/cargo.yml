@@ -50,6 +50,22 @@
     contents:
     - id: ClothingOuterHardsuitLuxury
 
+- type: entity # Omu
+  id: CrateCargoSyndicateToys
+  parent: CratePirate
+  name: syndicate movie prop crate
+  description: A crate filled with a foam shooting replica C-20r, Hristov, energy sword, and Viper just like from the movies! Buy this and throw the best foam dart party ever! Note: Any accidental magdumpings of dedicated cosplayers are not our fault.
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponC20rFoam
+    - id: WeaponHristovFoam
+    - id: WeaponViperFoam
+    - id: FoamAmmoBox
+      amount: 3
+    - id: ToySword
+      amount: 2
+
 - type: entity
   id: CrateCargoParcelWrap
   parent: CrateGenericSteel
