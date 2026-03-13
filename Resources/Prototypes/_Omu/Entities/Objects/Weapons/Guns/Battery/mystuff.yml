@@ -1,0 +1,46 @@
+- type: entity # in battery since it TECHNICALLY VERY TECHNICALLY is a battery weapon
+  name:
+  parent: [ BaseSword, BaseSyndicateContraband]
+  id: gunblade
+  description: feel that bass... wub wub wub wub
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+  - type: MeleeWeapon
+    animationRotation: -95
+    wideAnimationRotation: -135
+    heavyStaminaCost: 3
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 20
+    soundHit:
+      collection: MetalThud
+  - type: Tag
+    tags:
+    - CaptainSabre
+  - type: DisarmMalus
+  - type: Gun
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: Battery
+    maxCharge: 300
+    startingCharge: 300
+  - type: HitscanBatteryAmmoProvider
+    proto: SMGLaser
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 999
+    autoRechargePause: true
+    autoRechargePauseTime: 3
+  - type: AmmoCounter
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeThrowOnHit
+    distance: 2
+    speed: 6
