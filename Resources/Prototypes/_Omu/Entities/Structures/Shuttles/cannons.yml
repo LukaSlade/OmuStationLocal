@@ -2,7 +2,7 @@
   parent: [BaseStructure, BaseSyndicateContraband]
   id: SyndicatePlasmaProjector
   name: ARES-82e plasma projector
-  description: The Accumulative Resonance Ejection System projects an impossibly hot magnetically binded spear of plasma in the direction it is aimed. The internal supermatter crystal can only fire 5 shots before becoming inert.
+  description: The Accumulative Resonance Ejection System projects an impossibly energetic spear of energy in the direction it is aimed. The internal supermatter crystal can only fire 5 shots before becoming inert.
   components:
   - type: InteractionOutline
   - type: Sprite
