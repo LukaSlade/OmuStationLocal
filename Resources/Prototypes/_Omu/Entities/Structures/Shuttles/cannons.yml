@@ -1,17 +1,20 @@
 - type: entity
   parent: [BaseStructure, BaseSyndicateContraband]
-  id: AssembledSyndicateAutocannon
+  id: SyndicatePlasmaProjector
   name: ARES-82e plasma projector
-  description: The Accumulative Resonance Ejection System projects an impossibly hot magnetically binded spear of plasma in the direction it is aimed. The internal supermatter crystal can only fire 5 shots before becoming inert
+  description: The Accumulative Resonance Ejection System projects an impossibly hot magnetically binded spear of plasma in the direction it is aimed. The internal supermatter crystal can only fire 5 shots before becoming inert.
   components:
   - type: InteractionOutline
   - type: Sprite
     layers:
-      - state: icon
+      - state: base
         map: [ "enum.GunVisualLayers.Base" ]
+      - state: unshaded
+        map: [ "enum.GunVisualLayers.MagUnshaded" ]
+        shader: unshaded
     sprite: _Omu/Structures/Cannons/plasma_projector.rsi
   - type: Gun
-    fireRate: 0.1 # ~20 seconds to pierce one reinforced wall, 30 to pierce two.
+    fireRate: 0.2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -39,7 +42,11 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 200
       behaviors:
         - !type:DoActsBehavior
           acts: ["Destruction"]
+  - type: PointLight
+    color: "#00f7ff"
+    radius: 1.5
+    energy: 3.0

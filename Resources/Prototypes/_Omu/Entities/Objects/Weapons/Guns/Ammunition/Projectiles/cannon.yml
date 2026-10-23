@@ -1,7 +1,7 @@
 - type: entity
   id: ProjectileSyndicatePlasmaCannon
   name: Plasma Spike
-  description: If you are reading this, you are most likely about to be melted violently
+  description: If you are reading this, you are most likely about to die.
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -13,10 +13,12 @@
   - type: Projectile
     damage:
       types:
-        Heat: 60
-        Structural: 180
+        Heat: 30
+        Pierce: 35
+        Radiation: 10
+        Structural: 250
       armorPenetration: 1
-    penetrationThreshold: 150
+    penetrationThreshold: 200
     penetrationFactor: 0.01
   - type: AmbientSound
     range: 10
