@@ -1,0 +1,116 @@
+- type: entity
+  id: ProjectileSyndicateRailgunFull
+  name: High Energy Projectile
+  description: If you are reading this, you are most likely about to die.
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    layers:
+    - state: mediumstun
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 30
+        Pierce: 35
+        Radiation: 10
+        Structural: 250
+      armorPenetration: 1
+    penetrationThreshold: 200
+    penetrationFactor: 0.01
+  - type: AmbientSound
+    range: 10
+    volume: 1
+    sound:
+      path: /Audio/_Goobstation/Supermatter/calm.ogg
+  - type: Ammo
+    muzzleFlash: CosmicNovaImpactVfx
+  - type: PointLight
+    color: "#00f7ff"
+    radius: 5.0
+    energy: 8.0
+  - type: Trail
+    color: "#00f7ff"
+    scale: 0.1
+    frequency: 0.01
+    lifetime: 0.1
+    lerpTime: 0.001
+    alphaLerpAmount: 0.1
+    scaleLerpAmount: 0.1
+    shader: unshaded
+  - type: TimedDespawn
+    lifetime: 10
+
+- type: entity
+  id: ProjectileSyndicateRailgunMedium
+  name: Medium Energy Projectile
+  description: If you are reading this, you are most likely about to die.
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    layers:
+    - state: mediumstun
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 30
+        Radiation: 15
+        Structural: 100
+      armorPenetration: 0.5
+    penetrationThreshold: 120
+    penetrationFactor: 0.05
+  - type: AmbientSound
+    range: 10
+    volume: 1
+    sound:
+      path: /Audio/_Goobstation/Supermatter/calm.ogg
+  - type: PointLight
+    color: "#00f7ff"
+    radius: 3.0
+    energy: 5.0
+  - type: Trail
+    color: "#00f7ff"
+    scale: 0.05
+    frequency: 0.01
+    lifetime: 0.1
+    lerpTime: 0.001
+    alphaLerpAmount: 0.1
+    scaleLerpAmount: 0.3
+    shader: unshaded
+  - type: TimedDespawn
+    lifetime: 10
+
+- type: entity
+  id: ProjectileSyndicateRailgunLight
+  name: Low Energy Projectile
+  description: If you are reading this, you are most likely about to die.
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    layers:
+    - state: mediumstun
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 25
+  - type: AmbientSound
+    range: 10
+    volume: 1
+    sound:
+      path: /Audio/_Goobstation/Supermatter/calm.ogg
+  - type: Ammo
+    muzzleFlash: null
+  - type: PointLight
+    color: "#00f7ff"
+    radius: 2.0
+    energy: 4.0
+  - type: TimedDespawn
+    lifetime: 10
