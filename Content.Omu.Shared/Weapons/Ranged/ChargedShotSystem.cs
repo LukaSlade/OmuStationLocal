@@ -9,6 +9,7 @@ using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
+using Content.Shared.Wieldable.Components;
 
 namespace Content.Omu.Shared.Weapons.Ranged;
 

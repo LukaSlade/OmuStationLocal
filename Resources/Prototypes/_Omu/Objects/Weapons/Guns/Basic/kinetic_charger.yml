@@ -52,3 +52,4 @@
         path: /Audio/Effects/Arcade/player_charge.ogg
         params:
           pitch: 1.4
+  - type: LaserPointer
